@@ -4,4 +4,9 @@ public class Admin extends Administrator {
 		super(email, password);
 	}
 
+	@Override
+	public String getAccountType() {
+		return "Admin";
+	}
+
 }

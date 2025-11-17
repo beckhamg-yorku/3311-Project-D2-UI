@@ -15,7 +15,7 @@ public class Faculty extends User{
 	}
 
 	@Override
-	public String getUserType() {
+	public String getAccountType() {
 		return "Faculty";
 	}
 
@@ -24,12 +24,13 @@ public class Faculty extends User{
 		return false;
 	}
 
-	protected String getFacultyId() {
-		return facultyId;
-	}
-
 	protected void setFacultyId(String facultyId) {
 		this.facultyId = facultyId;
+	}
+
+	@Override
+	public String getOrgID() {
+		return facultyId;
 	}
 
 }

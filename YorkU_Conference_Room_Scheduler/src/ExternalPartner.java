@@ -15,7 +15,7 @@ public class ExternalPartner extends User {
 	}
 
 	@Override
-	public String getUserType() {
+	public String getAccountType() {
 		return "External Partner";
 	}
 
@@ -24,12 +24,13 @@ public class ExternalPartner extends User {
 		return false;
 	}
 
-	protected String getPartnerId() {
-		return partnerId;
-	}
-
 	protected void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	@Override
+	public String getOrgID() {
+		return partnerId;
 	}
 
 }

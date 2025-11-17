@@ -24,5 +24,9 @@ public class ChiefEventCoordinator extends Administrator {
 	public ArrayList<Admin> viewAllAdmins(){
 		return allAdmins;
 	}
+	@Override
+	public String getAccountType() {
+		return "Chief Event Coordinator";
+	}
 
 }

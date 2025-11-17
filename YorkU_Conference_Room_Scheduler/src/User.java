@@ -6,9 +6,8 @@ public abstract class User extends Accounts{
 		super(email, password);
 	}
 
-	
+	public abstract String getOrgID();
 	public abstract double getHourlyRate();
-	public abstract String getUserType();
 	public abstract boolean requiresVerfication();
 	
 	protected boolean isVerified() {

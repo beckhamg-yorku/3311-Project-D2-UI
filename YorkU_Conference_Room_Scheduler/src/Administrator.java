@@ -1,4 +1,4 @@
-public class Administrator extends Accounts {
+abstract class Administrator extends Accounts {
 	
 	public Administrator(String email, String password) {
 		super(email, password);
@@ -16,5 +16,4 @@ public class Administrator extends Accounts {
 	public void disableRoom() {
 		//TODO
 	}
-
 }

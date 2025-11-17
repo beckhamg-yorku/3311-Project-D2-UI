@@ -15,7 +15,7 @@ public class Student extends User {
 	}
 
 	@Override
-	public String getUserType() {
+	public String getAccountType() {
 		return "Student";
 	}
 
@@ -24,12 +24,13 @@ public class Student extends User {
 		return true;
 	}
 
-	protected String getStudentId() {
-		return studentId;
-	}
-
 	protected void setStudentId(String studentId) {
 		this.studentId = studentId;
+	}
+
+	@Override
+	public String getOrgID() {
+		return studentId;
 	}
 
 }

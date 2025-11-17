@@ -15,7 +15,7 @@ public class Staff extends User {
 	}
 
 	@Override
-	public String getUserType() {
+	public String getAccountType() {
 		return "Staff";
 	}
 
@@ -24,12 +24,13 @@ public class Staff extends User {
 		return false;
 	}
 
-	protected String getStaffId() {
-		return staffId;
-	}
-
 	protected void setStaffId(String staffId) {
 		this.staffId = staffId;
+	}
+
+	@Override
+	public String getOrgID() {
+		return staffId;
 	}
 
 }

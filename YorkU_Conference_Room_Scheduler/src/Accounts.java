@@ -10,7 +10,8 @@ abstract class Accounts {
 	private Date createdDate;
 	
 	
-	
+	public abstract String getAccountType();
+
 	
 	public Accounts(String email, String password) {
 		this.email = email;
