@@ -87,7 +87,7 @@ public class RegisterWindow {
 		accountTypeComboBox.addItem("Student");
 		accountTypeComboBox.addItem("Faculty");
 		accountTypeComboBox.addItem("Staff");
-		accountTypeComboBox.addItem("Partner");
+		accountTypeComboBox.addItem("External Partner");
 		registerPane.add(accountTypeComboBox);
 
 		txtBoxOrgID = new JPasswordField();

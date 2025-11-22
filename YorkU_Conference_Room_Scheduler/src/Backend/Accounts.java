@@ -3,7 +3,7 @@ package Backend;
 import java.util.Date;
 import java.util.UUID;
 
-abstract class Accounts {
+public abstract class Accounts {
 
 	private UUID accountId;
 	private String email;
@@ -47,7 +47,7 @@ abstract class Accounts {
 	protected void setEmail(String email) {
 		this.email = email;
 	}
-	protected String getPassword() {
+	public String getPassword() {
 		return password;
 	}
 	protected void setPassword(String password) {
