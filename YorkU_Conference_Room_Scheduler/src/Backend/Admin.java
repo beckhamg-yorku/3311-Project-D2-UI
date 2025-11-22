@@ -1,3 +1,5 @@
+package Backend;
+
 public class Admin extends Administrator {
 
 	protected Admin(String email, String password) {

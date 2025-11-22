@@ -1,3 +1,5 @@
+package Backend;
+
 public class ExternalPartner extends User {
 
 	private String partnerId;

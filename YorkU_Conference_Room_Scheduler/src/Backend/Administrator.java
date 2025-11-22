@@ -1,3 +1,4 @@
+package Backend;
 abstract class Administrator extends Accounts {
 	
 	public Administrator(String email, String password) {

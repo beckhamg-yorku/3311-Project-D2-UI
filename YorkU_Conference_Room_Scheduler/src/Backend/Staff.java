@@ -1,3 +1,5 @@
+package Backend;
+
 public class Staff extends User {
 	
 	private String staffId;
