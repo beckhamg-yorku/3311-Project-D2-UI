@@ -134,6 +134,21 @@ public class MainFrame {
                     "Success", 
                     JOptionPane.INFORMATION_MESSAGE);
                 clearLoginFields();
+                
+                // Add functionality to hide buttons depending on Account type
+                String accountType = accounts.getAccountType();
+		        if(accountType.equals("Admin")) {
+		        	dashboardWindow.getBtnDashCECPanel().setVisible(false);
+		        	dashboardWindow.getBtnDashAdminConsole().setLocation(dashboardWindow.getBtnDashCECPanel().getLocation());
+		        }
+		        else if (accountType.equals("Chief Event Coordinator")) {
+		        	dashboardWindow.getBtnDashAdminConsole().setVisible(false);
+		        }
+		        else {
+		        	dashboardWindow.getBtnDashAdminConsole().setVisible(false);
+		        	dashboardWindow.getBtnDashCECPanel().setVisible(false);
+		        } 
+                
                 frame.setContentPane(dashboardWindow.getPane());
                 refreshFrame();
             } else {
